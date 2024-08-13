@@ -1,87 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trello Clone</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-light ">
-        <a class="navbar-brand" href="#">Trello Clone</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Boards</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Templates</a>
-                </li>
-            </ul>
-        </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">Trello Clone</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Boards</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Templates</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <div class="container mt-4">
-        <div class="row">
-            <!-- Fruit Card -->
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header">
-                        <h5>Fruit</h5>
-                    </div>
-                    <ul class="list-group list-group-flush" id="fruit-list">
-                        <!-- Tasks will go here -->
-                    </ul>
-                    <div class="card-body">
-                        <input type="text" id="new-fruit-task" class="form-control" placeholder="Add new fruit">
-                        <button id="add-fruit-task" class="btn btn-primary mt-2">Add Task</button>
-                    </div>
-                </div>
+      <div class="row">
+        <!-- Fruit Card -->
+        <!-- Fruit Card -->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header" id="fruit-header">
+              <h5>Fruit</h5>
             </div>
-
-            <!-- Vegetables Card -->
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header">
-                        <h5>Vegetables</h5>
-                    </div>
-                    <ul class="list-group list-group-flush" id="vegetable-list">
-                        <!-- Tasks will go here -->
-                    </ul>
-                    <div class="card-body">
-                        <input type="text" id="new-vegetable-task" class="form-control" placeholder="Add new vegetable">
-                        <button id="add-vegetable-task" class="btn btn-primary mt-2">Add Task</button>
-                    </div>
-                </div>
+            <ul class="list-group list-group-flush" id="fruit-list">
+              <!-- Tasks will go here -->
+            </ul>
+            <div class="card-body">
+              <input
+                type="text"
+                id="new-fruit-task"
+                class="form-control"
+                placeholder="Add new fruit"
+              />
+              <button id="add-fruit-task" class="btn btn-primary mt-2">
+                Add Task
+              </button>
             </div>
-
-            <!-- Fast Food Card -->
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header">
-                        <h5>Fast Food</h5>
-                    </div>
-                    <ul class="list-group list-group-flush" id="fastfood-list">
-                        <!-- Tasks will go here -->
-                    </ul>
-                    <div class="card-body">
-                        <input type="text" id="new-fastfood-task" class="form-control" placeholder="Add new fast food">
-                        <button id="add-fastfood-task" class="btn btn-primary mt-2">Add Task</button>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <!-- Vegetables Card -->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header" id="vegetable-header">
+              <h5>Vegetables</h5>
+            </div>
+            <ul class="list-group list-group-flush" id="vegetable-list">
+              <!-- Tasks will go here -->
+            </ul>
+            <div class="card-body">
+              <input
+                type="text"
+                id="new-vegetable-task"
+                class="form-control"
+                placeholder="Add new vegetable"
+              />
+              <button id="add-vegetable-task" class="btn btn-primary mt-2">
+                Add Task
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fast Food Card -->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header" id="fastfood-header">
+              <h5>Fast Food</h5>
+            </div>
+            <ul class="list-group list-group-flush" id="fastfood-list">
+              <!-- Tasks will go here -->
+            </ul>
+            <div class="card-body">
+              <input
+                type="text"
+                id="new-fastfood-task"
+                class="form-control"
+                placeholder="Add new fast food"
+              />
+              <button id="add-fastfood-task" class="btn btn-primary mt-2">
+                Add Task
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

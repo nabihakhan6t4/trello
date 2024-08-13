@@ -1,8 +1,13 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Body Styling */
 body {
-    background-image: url('images/background-image.jpg'); /* Add your background image */
-    background-size: cover; /* Cover the entire screen */
-    background-repeat: no-repeat;
+    background: #053225; /* Dark Green */
     font-family: Arial, sans-serif;
     color: #333;
 }
@@ -13,13 +18,15 @@ body {
     backdrop-filter: blur(5px); /* Blur effect */
 }
 
-.navbar-brand, .nav-link {
+.navbar-brand,
+.nav-link {
     color: white !important;
     font-weight: bold;
     transition: color 0.3s; /* Smooth color transition */
 }
 
-.navbar-brand:hover, .nav-link:hover {
+.navbar-brand:hover,
+.nav-link:hover {
     color: #ebecf0 !important;
 }
 
@@ -30,7 +37,7 @@ body {
 
 /* Card Styling */
 .card {
-    background-color: #fff;
+    background: #B2A198; /* Khaki-like color */
     border: none;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Increased shadow for depth */
     border-radius: 8px;
@@ -42,16 +49,29 @@ body {
     transform: scale(1.03); /* Slight scale effect on hover */
 }
 
+/* Card Header Styling */
 .card-header {
-    background-color: #0079bf;
-    color: white;
-    border-bottom: 2px solid #006199;
+    color: white; /* White text for contrast */
     text-align: center;
     font-weight: bold;
     font-size: 1.2em;
+    border-bottom: 2px solid #D5006D; /* Darker shade for emphasis */
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     padding: 10px 0; /* Added padding for better spacing */
+}
+
+/* Specific Colors for Each Card Header */
+#fruit-header {
+    background-color: #FF6347; /* Tomato color for Fruit */
+}
+
+#vegetable-header {
+    background-color: #4CAF50; /* Green color for Vegetables */
+}
+
+#fastfood-header {
+    background-color: #FFC107; /* Amber color for Fast Food */
 }
 
 .card-body {
@@ -59,12 +79,9 @@ body {
 }
 
 /* Input and Button Styling */
-.card-body input, .card-body button {
+.card-body input {
     border-radius: 4px;
     margin-bottom: 10px; /* Added margin for spacing */
-}
-
-.card-body input {
     padding: 10px; /* Added padding to input */
     border: 1px solid #e1e1e1;
     width: calc(100% - 22px); /* Full width with padding */
@@ -72,25 +89,26 @@ body {
 }
 
 .card-body input:focus {
-    border-color: #0079bf; /* Change border color on focus */
+    border-color: #E34A6F; /* Change border color on focus */
 }
 
 .card-body button {
-    background-color: #0079bf;
+    background: #E34A6F; /* Cerise */
     border: none;
     color: white;
     width: 100%;
     font-weight: bold;
+    border-radius: 4px; /* Rounded corners */
     transition: background-color 0.3s; /* Smooth background color transition */
 }
 
 .card-body button:hover {
-    background-color: #006199;
+    background: #D5006D; /* Darker Cerise for hover */
 }
 
 /* List Item Styling */
 .list-group-item {
-    background-color: #fff;
+    background-color: #fff; /* White background for list items */
     border: 1px solid #e1e1e1;
     margin-bottom: 8px;
     border-radius: 4px;
@@ -106,7 +124,7 @@ body {
 
 /* Hover Effects */
 .list-group-item:hover {
-    background-color: #f7f8fa;
+    background-color: #f7f8fa; /* Light gray on hover */
 }
 
 /* Responsive Adjustments */
@@ -115,7 +133,8 @@ body {
         margin-bottom: 20px;
     }
 
-    .navbar-brand, .nav-link {
+    .navbar-brand,
+    .nav-link {
         font-size: 1em;
     }
 }
