@@ -1,0 +1,121 @@
+/* Body Styling */
+body {
+    background-image: url('images/background-image.jpg'); /* Add your background image */
+    background-size: cover; /* Cover the entire screen */
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Header Styling */
+.navbar {
+    background-color: rgba(2, 106, 167, 0.9); /* Semi-transparent header */
+    backdrop-filter: blur(5px); /* Blur effect */
+}
+
+.navbar-brand, .nav-link {
+    color: white !important;
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: #ebecf0 !important;
+}
+
+/* Container Styling */
+.container {
+    margin-top: 30px;
+}
+
+/* Card Styling */
+.card {
+    background-color: #fff;
+    border: none;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Increased shadow for depth */
+    border-radius: 8px;
+    margin-bottom: 20px; /* Added margin between cards */
+    transition: transform 0.3s; /* Animation on hover */
+}
+
+.card:hover {
+    transform: scale(1.03); /* Slight scale effect on hover */
+}
+
+.card-header {
+    background-color: #0079bf;
+    color: white;
+    border-bottom: 2px solid #006199;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 10px 0; /* Added padding for better spacing */
+}
+
+.card-body {
+    padding: 15px;
+}
+
+/* Input and Button Styling */
+.card-body input, .card-body button {
+    border-radius: 4px;
+    margin-bottom: 10px; /* Added margin for spacing */
+}
+
+.card-body input {
+    padding: 10px; /* Added padding to input */
+    border: 1px solid #e1e1e1;
+    width: calc(100% - 22px); /* Full width with padding */
+    transition: border-color 0.3s; /* Animation on border color */
+}
+
+.card-body input:focus {
+    border-color: #0079bf; /* Change border color on focus */
+}
+
+.card-body button {
+    background-color: #0079bf;
+    border: none;
+    color: white;
+    width: 100%;
+    font-weight: bold;
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.card-body button:hover {
+    background-color: #006199;
+}
+
+/* List Item Styling */
+.list-group-item {
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    padding: 10px 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: grab;
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.list-group-item:active {
+    cursor: grabbing;
+}
+
+/* Hover Effects */
+.list-group-item:hover {
+    background-color: #f7f8fa;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .navbar-brand, .nav-link {
+        font-size: 1em;
+    }
+}
