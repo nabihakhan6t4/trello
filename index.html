@@ -10,6 +10,10 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.7/dist/sweetalert2.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Header -->
@@ -44,13 +48,17 @@
     <div class="container mt-4">
       <div class="row">
         <!-- Fruit Card -->
-        <!-- Fruit Card -->
         <div class="col-md-4">
           <div class="card">
             <div class="card-header" id="fruit-header">
               <h5>Fruit</h5>
             </div>
-            <ul class="list-group list-group-flush" id="fruit-list">
+            <ul
+              class="list-group list-group-flush"
+              id="fruit-list"
+              ondrop="drop(event, 'fruit-list')"
+              ondragover="allowDrop(event)"
+            >
               <!-- Tasks will go here -->
             </ul>
             <div class="card-body">
@@ -73,7 +81,12 @@
             <div class="card-header" id="vegetable-header">
               <h5>Vegetables</h5>
             </div>
-            <ul class="list-group list-group-flush" id="vegetable-list">
+            <ul
+              class="list-group list-group-flush"
+              id="vegetable-list"
+              ondrop="drop(event, 'vegetable-list')"
+              ondragover="allowDrop(event)"
+            >
               <!-- Tasks will go here -->
             </ul>
             <div class="card-body">
@@ -96,7 +109,12 @@
             <div class="card-header" id="fastfood-header">
               <h5>Fast Food</h5>
             </div>
-            <ul class="list-group list-group-flush" id="fastfood-list">
+            <ul
+              class="list-group list-group-flush"
+              id="fastfood-list"
+              ondrop="drop(event, 'fastfood-list')"
+              ondragover="allowDrop(event)"
+            >
               <!-- Tasks will go here -->
             </ul>
             <div class="card-body">
@@ -114,7 +132,8 @@
         </div>
       </div>
     </div>
-
     <script src="script.js"></script>
+    <!-- Sweet Alert 2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
